@@ -31,9 +31,19 @@ body {
   font-size: 30px;
 }
 img {
-  max-height: 200px;
-  width: 100%;
-  user-select: none;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+.contain {
+  /* Image is scaled to fit within the container. */
+  /* Aspect ratio IS maintained */
+  object-fit: contain;
+}
+.scale-down {
+  /* Uses either 'none' or 'contain' to produce the smallest image size */
+  object-fit: scale-down;
 }
 .paper.heart::after {
   content: "";
@@ -61,6 +71,10 @@ p {
   font-family: "Zeyada";
   font-size: 50px;
   color: rgb(0, 0, 100);
-  opacity: 0.75;
+  opacity: 1;
   user-select: none;
+}
+tab {
+  display: inline-block;
+  margin-left: value; /* for e.g: value = 40px*/
 }
