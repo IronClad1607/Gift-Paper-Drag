@@ -58,14 +58,8 @@ img {
   background-repeat: no-repeat;
   opacity: 0.6;
 }
-.paper.red {
-  /*   filter: hue-rotate(90deg); */
-}
 .paper:nth-of-type(3n) {
   background-position: left top;
-}
-.paper:nth-of-type(3n) {
-  /*   filter: hue-rotate(200deg); */
 }
 p {
   font-family: "Zeyada";
